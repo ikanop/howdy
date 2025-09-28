@@ -1,0 +1,19 @@
+body {
+  font-family: 'Rock Salt', 'Helvetica', 'Arial', sans-serif;
+  color: white;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  background-color: saddlebrown;
+  color: white;
+  font-family: 'Rock Salt', 'Helvetica', 'Arial', sans-serif;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #6c3208;
+}

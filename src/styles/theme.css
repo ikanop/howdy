@@ -12,6 +12,7 @@ button {
   color: white;
   font-family: 'Rock Salt', 'Helvetica', 'Arial', sans-serif;
   cursor: pointer;
+  outline: 2px solid black;
 }
 
 button:hover {

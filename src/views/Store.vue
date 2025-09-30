@@ -1,16 +1,25 @@
 <script setup>
-import cowboyHat from '../assets/images/cowboyhat.jpg'
-import cowboyBoots from '../assets/images/cowboyboots.jpg'
+import cowboyHat from '../assets/images/cowboyhat.png'
+import cowboyBoots from '../assets/images/cowboyboots.png'
 
 const storeItems = [
   {id: 1, img: cowboyHat, title: 'Cowboy Hat', price: '500nok'},
   {id: 2, img: cowboyBoots, title: 'Cowboy Boots', price: '300nok'},
 ]
+
+function handleClick(item) {
+  alert(`You just purchased ${item.title} for ${item.price}\n`)
+}
 </script>
 
 <template>
   <div class="store-grid">
-    <div v-for="item in storeItems" :key="item.id" class="store-item">
+    <div
+      v-for="item in storeItems"
+      :key="item.id"
+      class="store-item"
+      @click="handleClick(item)"
+    >
       <img :src="item.img" alt="Cowboyhat" class="store-img"/>
       <h3>{{ item.title }}</h3>
       <p>{{ item.price }}</p>
@@ -31,6 +40,9 @@ const storeItems = [
   flex-direction: column;
   align-items: center;
   text-align: center;
+  cursor: pointer;
+  border-radius: 10px;
+  border: 1px solid white;
 }
 
 .store-img {

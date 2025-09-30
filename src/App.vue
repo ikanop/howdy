@@ -17,7 +17,7 @@ const headerText = computed(() => {
   <div>
     <Background/>
     <div class="grid-container">
-      <!-- Header row -->
+      <!-- Header -->
       <div class="grid-item header-container">
         <Header :text="headerText"/>
       </div>
@@ -31,7 +31,7 @@ const headerText = computed(() => {
       <!-- Main content -->
       <div class="grid-item modal-container">
         <div class="main">
-          <router-view/> <!-- 👈 page goes here -->
+          <router-view/>
         </div>
       </div>
 
@@ -46,6 +46,11 @@ const headerText = computed(() => {
 .sidebar {
   display: flex;
   flex-direction: column;
+  gap: 1rem;
+}
+
+.router-link-active {
+  background-color: peru;
 }
 
 .grid-container {

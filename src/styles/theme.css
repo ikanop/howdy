@@ -1,20 +1,27 @@
 body {
-  font-family: 'Rock Salt', 'Helvetica', 'Arial', sans-serif;
+  font-family: 'Rye', 'Helvetica', 'Arial', sans-serif;
   color: white;
 }
 
-button {
+button, a {
+  text-align: center;
+  width: 150px;
   padding: 10px 20px;
   font-size: 1rem;
   border: none;
   border-radius: 5px;
   background-color: saddlebrown;
   color: white;
-  font-family: 'Rock Salt', 'Helvetica', 'Arial', sans-serif;
+  font-family: 'Rye', 'Helvetica', 'Arial', sans-serif;
   cursor: pointer;
   outline: 2px solid black;
+  text-decoration: none;
 }
 
 button:hover {
+  background-color: #6c3208;
+}
+
+a:hover {
   background-color: #6c3208;
 }

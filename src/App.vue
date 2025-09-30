@@ -29,7 +29,7 @@ const headerText = computed(() => {
       </div>
 
       <!-- Main content -->
-      <div class="grid-item modal-container">
+      <div class="grid-item main-container">
         <div class="main">
           <router-view/>
         </div>
@@ -71,7 +71,7 @@ const headerText = computed(() => {
   grid-column: 1/-1;
 }
 
-.modal-container {
+.main-container {
   padding: 10px;
   background-color: rgba(0, 0, 0, 0.2);
   border-radius: 10px;
@@ -82,4 +82,5 @@ const headerText = computed(() => {
   width: 100%;
   justify-self: flex-start;
   align-items: flex-start;
-}</style>
+}
+</style>

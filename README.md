@@ -1,5 +1,27 @@
-# Vue 3 + Vite
+# Cowboy Learning Project 🤠
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+A small Vue project created for learning purposes. Features a fun cowboy-themed UI with a fake form and store for experimentation.
 
-Learn more about IDE Support for Vue in the [Vue Docs Scaling up Guide](https://vuejs.org/guide/scaling-up/tooling.html#ide-support).
+## Project Structure
+```
+src
+├── App.vue
+├── assets
+│   └── images
+│       ├── background.jpg
+│       ├── cowboyboots.png
+│       └── cowboyhat.png
+├── components
+│   ├── Background.vue
+│   ├── Header.vue
+│   └── Modal.vue
+├── index.js
+├── router
+│   └── router.js
+├── styles
+│   ├── index.css
+│   └── theme.css
+└── views
+    ├── Main.vue
+    └── Store.vue
+```
